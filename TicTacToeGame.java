@@ -51,8 +51,6 @@ public class TicTacToeGame {
 			System.out.print(player + " choose where you want to go(1-9): ");
 			
 			int move = keyboard.nextInt();
-			//clear the buffer
-			keyboard.nextInt();
 			//check if the move the user chose is valid
 			while (!board.isValidMove(move,turn)) {
 				System.out.println("That is not a valid move, try again ");
